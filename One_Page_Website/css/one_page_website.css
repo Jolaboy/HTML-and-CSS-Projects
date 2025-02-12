@@ -1,0 +1,67 @@
+/* This one_page_website.css style is for one_page_website.tml */
+
+html {
+    -webkit-text-size-adjust: 100;
+    -ms-text-size-adjust: 100%;
+}
+
+body {
+    background-color: aqua;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 95%;
+    color: black;
+}
+
+.wrap {
+    top: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+}
+
+.menu-container {
+    top: 0;
+    left: 0;
+    /*To the top edge of the screen*/
+    position: absolute;
+    width: 100%;
+    background-color: aqua;
+}
+
+.menu {
+    font: bold 12px/18px sans-serif;
+    text-align: center;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu li {
+    color: #B3B3B3;
+    display: inline-block;
+    margin-right: -2px;
+    position: relative;
+    padding: 12px 40px;
+    border: 1px solid #9D9FA2;
+    border-radius: 1.5px;
+    background-color: aqua;
+    cursor: pointer;
+}
+
+.menu li:hover{
+    background-color: aqua;
+    color: #fff;
+}
+
+h1 {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form input[type="text"] {
+    width: 20%;
+    margin: 5px;
+    border: 2px solid black;
+    border-radius: 6px;
+}
