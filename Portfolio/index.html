@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--Head-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" initial-scale="1.0">
+        <title>Amadou Jarju</title>
+        <link rel="stylesheet" type="text/css" href="css/portfolio.css">
+    </head>
+
+    <!--Body-->
+    <body class="Background">
+
+        <!--Navbar-->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#Github">Github</a>
+            <a href="#Contact">Contact</a>
+        </div>
+
+        <!---Breaks inserted to add space between navbar and the first heading-->
+        <br>
+        <br>
+
+        <!--Background video-->
+        <div id="Home">
+            <video autoplay muted loop id="Typing_Video">
+                <source src="./videos/bits.mp4" type="video/mp4">
+                <!--Display message if video fails to run-->
+                Your browser does not support HTML5 Video.
+            </video>
+        </div>
+
+        <!--Video Text-->
+        <div class="Video_Text">
+            <h1 class="white-text">Amadou's Portfolio</h1>
+            <strong>
+                <p class="center">
+                    <q>The only way to do great work is to love what you do. 
+                        <br>If you haven't found one yet, keep looking.
+                        <br>Don't settle.
+                    </q>
+                    <br> -Steve Jobs
+                    <br>
+                    <br> My name is Amadou Jarju. Welcome to my portfolio website. On it, I will tell you about my background and experience.
+                    <br>
+                    <br> Feel free to explore and enjoy!
+                </p>
+            </strong>
+        </div>
+
+        <!--About Section-->
+        <div class="Row" id="About">
+            <!--Left column-->
+            <div class="Column_2">
+                <img src="images/jarju.jpg" alt="Personal Photo">
+            </div>
+            <!--Right column-->
+            <div class="Column_1">
+                <h1>About</h1>
+                <p>
+                    I am a software developer with endless love for writing code. Besides my job, I enjoy spending time with family.
+                    <br>
+                    <br>I am a graduate of <a href="https://www.pitman-training.com/" target="_blank">Pitman Training</a>'s Advanced Software and Web Development Diploma and <a href="https://www.learncodinganywhere.com/" target="_blank">TechAcademy</a>'s Bootcamp, trained and experienced in the following Programming Skills and Languages: HTML, CSS, Javascript, C#, .NET, Version Control, SQL and Project Management(Software Development).
+                    <br>
+                    <br>I am a full-stack developer and would love to work with you on your projects. <a href="#Contact">Contact</a> me below!
+                </p>
+            </div>
+        </div>
+
+        <!--Github Section-->
+        <div class="Row" id="GitHub">
+            <!--Left column-->
+            <div class="Column_1">
+                <h1>GitHub</h1>
+                <p>
+                    You can view my coding projects on my GitHub profile here:
+                    <br>
+                    <p class="center"><a href="https://github.com/Jolaboy/HTML-and-CSS-Projects" target="_blank">My Projects Github</a></p>
+                </p>
+            </div>
+            <!--Right column-->
+            <div class="Column_2">
+                <a href="https://github.com/Jolaboy/HTML-and-CSS-Projects" target="_blank"><img src="./images/github-logo.jpg" alt="GitHub Logo"></a>
+            </div>
+        </div>
+
+        <!--Contact Section-->
+        <div class="Row" id="Contact">
+            <!--Contact image, left column-->
+            <div class="Column_2 Column_tall">
+                <img src="images/contact.png" alt="Contact_Image">
+            </div>
+            <!--Contact form, right column-->
+            <div class="Column_1 Column_tall">
+                <h1>Contact</h1>
+                <!--This specifies where and how to send the form data; we are leaving it blank-->
+                <form action="https://formspree.io/f/xyzkqoge" method="POST"> <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
+                    <label>Name:</label>
+                        <input type="text" placeholder="Please enter your name here">
+                    <label>Email:</label>
+                        <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+                    <label>Message:</label>
+                        <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+                        <input type="submit" value="SUBMIT">
+                </form>
+            </div>
+            </div>
+        </div>
+
+        <!--Footer Section-->
+        <footer>
+            <p>
+                <p class="center">&copy; Ams Digital Technologies | <a href="https://github.com/Jolaboy/HTML-and-CSS-Projects" target="_blank">Jolaboy/Amadou Jarju</a></p>
+                <br>
+                <nav>
+                    <a href="#Home">Home</a> |
+                    <a href="#About">About</a> |
+                    <a href="#Github">Github</a> |
+                    <a href="#Contact">Contact</a>
+                </nav>
+            </p>
+        </footer>
+    </body>
+</html>
