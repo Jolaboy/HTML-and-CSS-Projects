@@ -6,7 +6,7 @@ html {
 }
 
 body {
-    background-color: aqua;
+    background-color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 95%;
     color: black;
@@ -25,7 +25,7 @@ body {
     /*To the top edge of the screen*/
     position: absolute;
     width: 100%;
-    background-color: aqua;
+    background-color: navy;
 }
 
 .menu {
@@ -38,20 +38,20 @@ body {
 }
 
 .menu li {
-    color: #B3B3B3;
+    color: white;
     display: inline-block;
     margin-right: -2px;
     position: relative;
     padding: 12px 40px;
     border: 1px solid #9D9FA2;
     border-radius: 1.5px;
-    background-color: aqua;
+    background-color: navy;
     cursor: pointer;
 }
 
 .menu li:hover{
-    background-color: aqua;
-    color: #fff;
+    background-color: gray;
+    color: black;
 }
 
 h1 {
@@ -64,4 +64,16 @@ form input[type="text"] {
     margin: 5px;
     border: 2px solid black;
     border-radius: 6px;
+}
+
+#submit {
+    text-align: center;
+}
+
+footer {
+    padding: 1%;
+    color: white;
+    background-color: navy;
+    text-align: center;
+
 }
