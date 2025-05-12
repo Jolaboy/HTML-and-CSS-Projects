@@ -6,7 +6,7 @@
     <head>
 	    <meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width initial-scale=1.0">
-		<title>J-bit school of Digital Technologies</title>
+		<title>Ams Digital Technologies Academy</title>
 		<link rel="stylesheet" href="./css/one_page_website.css">
 	</head>
 	<body>
@@ -16,10 +16,10 @@
 		    <div class="menu-container">
 				<ul class="menu">
 					<a href="#home" id="link"><li>HOME</li></a>
-				    <a href="#courses" id="link"><li>COURSES</li></a>
+					<a href="#courses" id="link"><li>COURSES</li></a>
 					<a href="#videos" id="link"><li>VIDEOS</li></a>
 					<a href="#enrol" id="link"><li>ENROL</li></a>
-			    </ul>
+				</ul>
 			</div>
 		</div>
 	<!-- End Of NAV Section -->
@@ -28,93 +28,115 @@
 	 <br>
 	 <br>
 	 <br>
-	    <div id="home">   
-            <di>
-				<h3>J-bits School of Ditital Technologies<br>
-					Home of computing and digital technologies
-				</h3>
-				<p>Here at J-bits school of digital technologies, we aim to develop the talent <br>
-				of software engineers.Whether you are software engineer or an aspiring <br>
-				software engineer, we have courses designed to fulfil your aspirations.</p>
-					
-			</di>
+	    <div id="home">
+			<h1>Ams School of Ditital Technologies</h1>           
+			<h3>Home of Computing and Digital Technologies</h3>
+			<br>
+			<p>Here at Ams Digital Technologies Academy, we aim to develop the talent 
+			of software developers.Whether you are software developers or an aspiring 
+			one, we have courses designed to fulfil your goals and aspirations.</p>		
 		</div>
 	<!-- End Of Home -->
 		
 		<!-- COURSES SECTION -->
 	    <section>
-		    <div id="courses">
-			    <h1>Courses</h1>
-			    <div>
-			
-			<!-- Course Photo Container 1 -->
-			    <div>
-				    <div>
-						<div>
-							<h3>Microsoft 365 for Beginners</h3>
-						</div>
-					    <img src="./images/Microsoft-365.jpeg" alt="Refresh to load image" width="500" height="500">
-					</div>
-				</div>
-			<!-- End of Photo Container 1 -->
-			
-			<!-- Course Photo Container  2 -->
-			    <div>
-				    <div>
-						<div>
-							<h3>Introduction to Software Engineering</h3>
-						</div>
-					    <img src="./images/Software.jpg" alt="Refresh to load image" width="500" height="500">
-					</div>
-				</div>
-			<!-- End of Photo container 2 -->
-			
-			<!-- Course Photo Container 3 -->
-			    <div>
-				    <div>
-						<div>
-							<h3>Web Development</h3>
-						</div>
-					    <img src="./images/Web_dev.jpg" alt="Refresh to load image" width="500" height="500">
-					</div>
-				</div>
-			    <!-- End Of Photo Container 3 -->
-			
-			    <!-- Course photo container 4 -->
-			    <div>
-				    <div>
-						<div>
-							<h3>Python Programming</h3>
-						</div>
-					    <img src="./images/python.png" alt="Refresh to load image" width="500" height="500">
-					</div>
-				</div>
-		</section>
-			    <!-- End of Course Photo Container 4 -->
+		<div id="courses" class="row">
+            <div class="column">
+            <img src="./images/Microsoft_365.jpg" style="width:100%" alt=""  onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+            <img src="./images/Software-deve.jpg" style="width:100%"  alt="" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+            <img src="./images/Web_dev.jpg" style="width:100%"  alt="" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+            <img src="./images/Python.jpg" style="width:100%"  alt="" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+            </div>
+        </div>
+
+		<div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlides">
+                <div class="numbertext">1 / 4</div>
+                <img src="./images/Microsoft_365_wide.jpg" alt=""  style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                <div class="numbertext">2 / 4</div>
+                <img src="./images/Software_deve_wide.jpg"   alt=""  style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                <div class="numbertext">3 / 4</div>
+                <img src="./images/Web_dev_wide.jpg" alt="" style="width:100%">
+                </div>
+    
+                <div class="mySlides">
+                <div class="numbertext">4 / 4</div>
+                <img src="./images/Python_wide.jpg"  alt=""  style="width:100%">
+                </div>
+    
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="caption-container">
+            <p id="caption"></p>
+        </div>
+            <div class="column">
+            <img class="dot cursor" src="./images/Microsoft_365_wide.jpg" style="width:100%" onclick="currentSlide(1)" alt="Micosoft 365">
+            </div>
+            <div class="column">
+            <img class="dot cursor" src="./images/Software_deve_wide.jpg" style="width:100%" onclick="currentSlide(2)" alt="Software Development">
+            </div>
+            <div class="column">
+            <img class="dot cursor" src="./images/Web_dev_wide.jpg" style="width:100%" onclick="currentSlide(3)" alt="Web Development">
+            </div>
+            <div class="column">
+                <img class="dot cursor" src="./images/Python_wide.jpg" style="width:100%" onclick="currentSlide(4)" alt="Python Programming">
+            </div>
+        </div>
+        </div>
+
+		</section> 
+		                            <!-- End of Course Photo Container -->
 				
-				<!-- Videos Section-->
+				                        <!-- Videos Section-->
 				
-		<section> 
-				<div id="videos">
-					<h1>Watch our courses videos here!</h1>
-				    <div>
-						<h3>Check Out This Introductory Video On Microsoft 365</h3>
-					    <iframe width="560" height="315" src="https://www.youtube.com/embed/2W0T2qGZ9Dc?si=Oq14y-cIVkTscWiE" title="M365" frameborder="0" allowfullscreen></iframe>
+		<section>
+			<div id="videos">
+			<h1>Watch our courses videos here!</h1>
+					
+				<div class="video-container">
+					<div class="video-column">
+						<div class="video-item">
+							<h3>Check Out This Introductory Video On Microsoft 365</h3>
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/2W0T2qGZ9Dc?si=Oq14y-cIVkTscWiE" title="M365" frameborder="0" allowfullscreen></iframe>
+						</div>
+							
+						<div class="video-item">
+							<h3>Check Our This Intoductory Video On Software Development</h3>
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/pquPUX1EihM?si=imgreZ7i2EtaCo3U" title="SW_Dev" frameborder="0" allowfullscreen></iframe>
+						</div>
 					</div>
-					<div>
-						<h3>Check Our This Intoductory Video On Software Development</h3>
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/sB2iQSvrcG0?si=vQNqFJP5EvBNaZOn" title="SW_Dev" frameborder="0" allowfullscreen></iframe>
-					</div>
-					<div>
-						<h3>Check Our This Introductory Video On Web Development</h3>
-					    <iframe width="560" height="315" src="https://www.youtube.com/embed/ysEN5RaKOlA?si=RdHoYg9MR3yWzfrF" title="Web_dev" frameborder="0" allowfullscreen></iframe>
-					</div>
-					<div>
-						<h3>Check Out This Introductory Video On Python Programming</h3>
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/Y8Tko2YC5hA?si=7F4UxyQXKj6s86xh" title="Python" frameborder="0" allowfullscreen></iframe>
+						
+					<div class="video-column">
+						<div class="video-item">
+							<h3>Check Our This Introductory Video On Web Development</h3>
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/ysEN5RaKOlA?si=RdHoYg9MR3yWzfrF" title="Web_dev" frameborder="0" allowfullscreen></iframe>
+						</div>
+							
+						<div class="video-item">
+							<h3>Check Out This Introductory Video On Python Programming</h3>
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/Y8Tko2YC5hA?si=7F4UxyQXKj6s86xh" title="Python" frameborder="0" allowfullscreen></iframe>
+						</div>
 					</div>
 				</div>
+			</div>
 		</section>
+		
 				<!-- End of Videos Section-->
 				
 				<!-- End Of Course -->  		
@@ -122,34 +144,26 @@
 				<!-- Enrolment -->
 		
 		<section>
-		    <div id="enrol">
-			    <div>
-				    <h1>Enrol Today</h1>
-				    <div>
-						<h2><span>Join one of our upcoming cohorts</span><br>
-					    by registering your interest today.
-						</h2>
-						<p>
-						    Please provide us with your details to enrol.
-						</p>
-						<div>
-						    <form action="" method="post">
-							    <input class="enrol" type="text" placeholder="Enter your name" value="Name">
-								<input class="enrol" type="text" placeholder="Enter your surname" value="Surname">
-								<input class="enrol" type="text" placeholder="Enter your email" value="Email">
-								<input class="enrol" type="text" placeholder="Enter your phone" value="Phone"><br>
-								<div class="form-spacer">
-								    <label class="Terms">Terms and Conditions</label>
-								</div>
-								<br>
-								<div>
-								    <input type="submit" value="Submit">
-								</div>
-							</form>
-						</div>
+		<div id="enrol">
+			    
+		    <h1>Enrol Today</h1>
+		    <h2><span>Join one of our upcoming cohorts</span><br>
+		    by registering your interest today.
+		    </h2>
+		    <p>Please provide us with your details to enrol.</p>
+			<div>
+				<form action="" method="post">
+					<input class="enrol" type="text" placeholder="Enter your name" value="Name:">
+					<input class="enrol" type="text" placeholder="Enter your surname" value="Surname:">
+					<input class="enrol" type="text" placeholder="Enter your email" value="Email:">
+					<input class="enrol" type="text" placeholder="Enter your phone" value="Phone:"><br>
+					<div class="form-spacer">
+					<label class="Terms"><h3>Terms and Conditions</h3></label>
 					</div>
-				</div>
+					<input type="submit" value="Submit">
+				</form>
 			</div>
+		</div>
 		</section>
 		<br>
 		<br>
@@ -158,13 +172,13 @@
 		<!-- Footer -->
 		<footer>
 		    <div>
-		        <p>&copy;2025   &nbsp;|&nbsp;  jbitsdigitaltechnologies.edu<p>
+		        <p>&copy;2025   &nbsp;|&nbsp;  amsdigitaltechnologies.edu<p>
 		    </div>
 		</footer>
 			    </div>
 			</div>
 		</section>
 	   <!--End of Footer-->			
-	
+	<script src="JS/one_page_website.js"></script>
 	</body>
 </html>
