@@ -12,7 +12,7 @@ html {
     -ms-text-size-adjust: 100%;
 }
 
-body {
+body {    /* This style the body of the page */
     font-size: 14px;
     margin: 0;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -26,7 +26,7 @@ nav {
     display: block;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {    /* This sets font for the headings */
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -243,7 +243,7 @@ section {
     font-family: sans-serif;
 }
 
-.reservation input[type="text"] {
+.reservation input[type="text"] {  /* This is the text input field */
     font-size: 15px;
     outline: none;
     font-weight: 600;
@@ -261,7 +261,7 @@ section {
     font-family: 'Raleway', sans-serif;
 }
 
-.reservation input [type="text"]:hover {
+.reservation input [type="text"]:hover {      
     box-shadow: 0 0 10px rgba(100, 65, 0, 0.8);
 }
 
@@ -323,7 +323,7 @@ section {
 /*-----------------------------
        @MEDIA QUERIES
 ------------------------------*/
-@media all and (max-width:640px) and (min-width:381px) {
+@media all and (max-width:640px) and (min-width:381px) {    
     .head-main {
         font-size: 28px;
     }
