@@ -14,37 +14,45 @@
   </head>
   <body>
     
-    <!--Nav - start of the container-->
     <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-info">
-          
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link text-light" href="#about">About</a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link text-light" href="#trips">Trips</a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link text-light" href="#sign up">Sign Up</a>
-                </li>
-              </ul>
-              <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-primary my-2 my-sm-0 text-light" type="submit">Search</button>
-              </form>
-            </div>
-          </nav>
-          <!--End of Nav-->
-
-          <!--Bader under Nav-->
-          <div class="jumbotrom jumbotron-fluid bg-info text-center">
+      <!--Nav - start of the container-->
+                <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-info sticky-top">
             <div class="container">
-              <h1 class="display-4 text-light">Gambia Historical Sites</h1>
-              <p class="lead text-light">Come visit one or more UNESCO heritage Sites with rich ancient history and culture.</p>
+                <button class="navbar-toggler" type="button" title="Nav" data-toggle="collapse" data-target="#navbarContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <!-- Navigation Pills -->
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#trips">Trips</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sign up">Sign Up</a>
+                        </li>
+                    </ul>
+                    
+                    <!-- Search Form -->
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                        <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
             </div>
-          </div>
+        </nav>
+        
+        <!-- Main Header Jumbotron -->
+        <header class="jumbotron jumbotron-fluid bg-info text-white mb-0">
+            <div class="container text-center">
+                <h1 class="display-4">Gambia Historical Sites</h1>
+                <p class="lead">Come visit one or more UNESCO heritage Sites with rich ancient history and culture.</p>
+            </div>
+        </header>
           <!--End of Badge under Nav-->
 
           <!--About section-->     
@@ -63,13 +71,16 @@
                 <h3>Upcoming Trips</h3>
                   <ul class="list-group">
                     <li class="list-group-item">
-                        <a class="new-link" href="">Kunta Kinteh Island</a>
+                        <a class="new-link" href="https://whc.unesco.org/en/list/761/">Kunta Kinteh Island</a>
                     </li>
                     <li class="list-group-item">
-                        <a class="new-link" href="">Stone Circles</a>
+                        <a class="new-link" href="https://whc.unesco.org/en/list/1226/">Stone Circles</a>
                     </li>
                     <li class="list-group-item">
-                        <a class="new-link" href="">Bintang Bolong</a>
+                        <a class="new-link" href="https://www.britannica.com/place/Gambia-River#ref131652">Bintang Bolong</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a class="new-link" href="https://en.wikipedia.org/wiki/Arch_22">Arch 22</a>
                     </li>
                   </ul>
               </div>
@@ -121,44 +132,117 @@
           </div>
           <!--End of Sites & Trips-->
 
+          <!-- jumbotron heading -->
+          <div class="jumbotron jumbotron-fluid bg-info mt-5 text-center py-3">
+            <div class="container">
+              <h1 class="display-5 hidden-sm-down" style="color: #fff;font-family: roboto;
+              font-weight: 700;text-transform: uppercase;">Tour Packages</h1>
+              <p class="lead">Check out our various tour Packages....</p>
+              <!-- Promotional Packages-->
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#register">Register your interest today</button>
+              <!-- /Promotional Pakages-->
+            </div>
+          </div>
+          <!-- /jumbotron heading-->
 
           <!--Sign Up section-->
           <div class="text-center" id="sign up">
-            <form>
-                <h3 class="text-primary my-5">Sign up and Book Trips</h3>
-                <div class="form-group">
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <h3 class="text-primary my-5">Sign up and Book Tours</h3>
+            <form class="form-inline justify-content-center">
+                <div class="form-group mx-sm-3 mb-2">
+                  <label for="StaticEmail2" class="sr-only">Email</label>
+                  <input type="password" class="form-control" id="StaticEmail2" placeholder="example@email.com">
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </form>
+                <div class="form-group mx-sm-3 mb-2">
+                  <label for="inputPassword2" class="sr-only">Password</label>
+                  <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+                </div>
+                <button type="button" class="btn btn-secondary btn-info popover-dismiss" data-container="body" data-toggle="popover" 
+                data-placement="right" data-content="Submit your email and get updates on upcoming trips.">
+                Sign Up
+                </button>
+
+            </form>
           </div>
           <!--End of Sign Up section-->
 
-          <!--Footer-->
-          <div class="container my-5">
-            <ul class="nav">
-                <li class="nav-item">
-                  <small class="nav-link active" href="#">Socials</small>
-                </li>
-                <li class="nav-item">
-                  <small class="nav-link" href="#">gamtours.org</small>
-                </li>
-                <li class="nav-item">
-                  <small class="nav-link" href="#">Info@jarjutours.org</small>
-                </li>
-                <li class="nav-item">
-                  <small class="nav-link" href="#">&copy;2025 Jarju Tours</small>
-                </li>
-              </ul>
+          <!-- form modal-->  
+          <div class="modal" id="register" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Register to receive exclusive deals</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <fieldset class="form-group">
+                      <label for="firstname">First Name</label>
+                      <input type="text" class="form-control" placeholder="First Name....">
+                    </fieldset>
+                    <fieldset class="form-group">
+                      <label for="lastname">Last Name</label>
+                      <input type="text" class="form-control" placeholder="Last Name....">
+                    </fieldset>
+                    <fieldset class="form-group">
+                      <label for="email">Email</label>
+                      <input type="text" class="form-control" placeholder="Email....">
+                    </fieldset>
+                    <fieldset class="form-group">
+                      <label for="password">Password</label>
+                      <input type="text" class="form-control" placeholder="Password....">
+                    </fieldset>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
           </div>
+          <!-- /form modal-->
+
+          <!--Footer-->
+                    <!--Footer-->
+          <footer class="bg-info text-white py-4 mt-5">
+              <div class="container">
+                  <div class="row justify-content-center text-center">
+                      <div class="col-md-12">
+                          <ul class="nav justify-content-center">
+                              <li class="nav-item">
+                                  <a class="nav-link text-white" href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link text-white" href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link text-white" href="#">jarjutours.org</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link text-white" href="mailto:info@jarjutours.org">Info@jarjutours.org</a>
+                              </li>
+                          </ul>
+                          <hr class="bg-white my-3">
+                          <p class="mb-0">&copy; 2025 Jarju Tours. All rights reserved.</p>
+                      </div>
+                  </div>
+              </div>
+          </footer>
           <!--End of Footer-->
 
     </div>
 
-    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script>
+      $('.popover-dismiss').popover({
+       trigger: 'focus'})
+    </script>
+  
   </body>
 </html>
